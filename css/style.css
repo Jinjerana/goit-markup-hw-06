@@ -330,19 +330,19 @@ body {
   margin: 0;
   padding-top: 0;
   font-size: 12px;
-  background-color: var(--white);
-  color: var(--lightslate);
-  transition-property: border, color;
+  background-color: transparent;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modalinput:focus {
-  color: var(--iris);
+  border-color: var(--iris);
 }
 
 .modaldiv:focus .iconmodal {
-  fill: var(--iris);
+  color: var(--iris);
+  outline: none;
 }
 
 .modaldiv {
@@ -417,7 +417,12 @@ body {
 
 .checkbox:checked + .checkicon {
   background-color: var(--iris);
+  border-color: var(--iris);
   fill: var(--white);
+}
+
+.checkbox:focus + .checkicon {
+  border-color: var(--iris);
 }
 
 .checkicon {
@@ -434,6 +439,11 @@ body {
   fill: transparent;
 }
 
+.checkicon:focus {
+  border-color: var(--iris);
+  fill: var(--iris);
+}
+
 .formbutton {
   display: block;
   align-items: center;
@@ -445,6 +455,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
