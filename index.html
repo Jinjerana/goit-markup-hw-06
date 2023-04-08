@@ -69,24 +69,28 @@
             <form class="js-speaker-form form">
               <div class="form-field">
                 <label class="label" for="name">Name</label>
-                <input class="modalinput" type="text" name="name" id="name" autofocus>
-                <span class="icon"><svg width="18" height="24" class="iconsvg">
-                  <use href="./images/icons.svg#icon-Frame"></use>
-                  </svg></span>
+                <div class="modaldiv">
+                  <input class="modalinput" type="text" name="name" id="name" autofocus>
+                <svg width="18" height="24" class="iconmodal">
+                  <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </div>
               </div>
               <div class="form-field">
                 <label class="label" for="tel">Phone</label>
+                <div class="modaldiv">
                 <input class="modalinput" type="tel" name="tel" id="tel">
-                <span class="icon"><svg width="18" height="24" class="iconsvg">
+                <svg width="18" height="24" class="iconmodal">
                   <use href="./images/icons.svg#icon-phone"></use>
-                  </svg></span>
+                  </svg></div>
               </div>
               <div class="form-field">
                 <label class="label" for="mail">Email</label>
+                <div class="modaldiv">
                 <input class="modalinput" type="email" name="mail" id="mail">
-                <span class="icon"><svg width="18" height="24" class="iconsvg">
+                <svg width="18" height="24" class="iconmodal">
                   <use href="./images/icons.svg#icon-email"></use>
-                  </svg></span>
+                  </svg></div>
               </div>
               <div class="form-field">
                 <label class="label" for="comment">Comment</label>
@@ -388,12 +392,13 @@
         <p class="footertextcenter">Subscribe</p>
         <div class="footerdiv">
         <form class="footerform">
-          <label class="labelfooter" for="name">E-mail</label>
-          <input class="footerinput" type="email" name="mail" id="mail">
-        </form>
+          
+          <input class="footerinput" type="email" name="mail" id="mail" placeholder="E-mail">
+        
         <button type="submit" class="footerformbutton">Subscribe<svg width="24" height="24" class="footerformicon">
                 <use href="./images/icons.svg#icon-Frame-3"></use>
                 </svg></button>
+        </form>
       </div>  
       </div>
       </div>
