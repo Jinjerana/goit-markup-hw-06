@@ -338,11 +338,11 @@ body {
 
 .modalinput:focus {
   border-color: var(--iris);
+  outline: none;
 }
 
-.modaldiv:focus .iconmodal {
-  color: var(--iris);
-  outline: none;
+.modalinput:focus + .iconmodal {
+  fill:var(--iris)
 }
 
 .modaldiv {
@@ -412,7 +412,7 @@ body {
 .checkbox {
   appearance: none;
   position: absolute;
-  background-color: transparent;
+  opacity; 0;
 }
 
 .checkbox:checked + .checkicon {
